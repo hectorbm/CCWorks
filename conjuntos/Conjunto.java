@@ -1,4 +1,4 @@
-package domain;
+package domain.conjuntos;
 
 import java.util.ArrayList;
 import java.util.Iterator;

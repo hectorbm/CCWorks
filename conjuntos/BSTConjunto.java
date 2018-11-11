@@ -1,4 +1,4 @@
-package domain;
+package domain.conjuntos;
 
 import domain.bst.BST;
 import domain.bst.Node;
