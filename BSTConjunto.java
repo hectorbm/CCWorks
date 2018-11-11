@@ -1,5 +1,8 @@
 package domain;
 
+import domain.bst.BST;
+import domain.bst.Node;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 

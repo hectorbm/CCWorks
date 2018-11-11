@@ -1,4 +1,4 @@
-package domain;
+package domain.sparseMatrix;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,6 @@
-package domain;
+package domain.bst;
+
+import domain.bst.Node;
 
 import java.util.ArrayList;
 

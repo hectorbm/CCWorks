@@ -1,4 +1,4 @@
-package domain;
+package domain.sparseMatrix;
 
 public class ElementarySparseMatrix {
     private boolean[][] elem;
