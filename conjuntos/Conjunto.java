@@ -7,8 +7,8 @@ public class Conjunto <T> {
 
     private  ArrayList<T> setElements;
 
-    public Conjunto (ArrayList<T> o){
-        this.setElements = o;
+    public Conjunto (ArrayList<T> elems){
+        this.setElements = elems;
     }
 
     public Conjunto (){
