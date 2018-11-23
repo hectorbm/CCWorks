@@ -1,4 +1,4 @@
-package AdHoc;
+package domain.AdHoc;
 
 import java.util.ArrayList;
 

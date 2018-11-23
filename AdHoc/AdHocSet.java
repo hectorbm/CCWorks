@@ -1,7 +1,8 @@
-package AdHoc;
+package domain.AdHoc;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+
 
 public class AdHocSet<T> {
     private ArrayList<T> elements;
@@ -76,8 +77,8 @@ public class AdHocSet<T> {
         while(itr.hasNext()){
             Operation op = (Operation) itr.next();
             op.doOperationOn(this.elements);
-            this.operations.remove(op);
         }
+        this.operations = new ArrayList<>();
     }
 
 }
