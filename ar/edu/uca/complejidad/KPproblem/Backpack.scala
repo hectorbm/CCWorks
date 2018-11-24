@@ -1,4 +1,4 @@
-package ar.edu.uca.complejidad.KPproblem
+package domain.ar.edu.uca.complejidad.KPproblem
 
 class Backpack (val aWeight: Int, val aProfit: Int) {
    val weight: Int = aWeight

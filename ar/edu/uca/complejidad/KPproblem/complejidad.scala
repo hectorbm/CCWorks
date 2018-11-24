@@ -1,4 +1,4 @@
-package ar.edu.uca.complejidad.KPproblem
+package domain.ar.edu.uca.complejidad.KPproblem
 
 object Complejidad {
 
@@ -32,9 +32,5 @@ object Complejidad {
    println(solveKP(backpack,List(),capacity))
    
   }
-
-
-
-
 
 }
