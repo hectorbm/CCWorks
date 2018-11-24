@@ -8,13 +8,18 @@ public class BST<T extends Comparable<T>> {
     private Node root;
     private int size;
 
-    public BST() {}
-    public BST(Node aNode){this.root = aNode;}
+    public BST() {
+
+    }
+    public BST(Node aNode){
+        this.root = aNode;
+        this.size = 1;
+    }
 
     public void add(Node<T> aNode){
         if(this.root == null) {
             this.root = aNode;
-            this.size++;
+            this.size = 1;
         }
         else
          this.addRecursive(aNode,this.root);
@@ -44,16 +49,21 @@ public class BST<T extends Comparable<T>> {
         return containsRecursive(this.root, elem);
     }
     private boolean containsRecursive(Node aNode, T elem){
-        if(aNode != null) {
-            int compareVal = aNode.getValue().compareTo(elem);
-            if (compareVal == 0)
-                return true;
-            else if (compareVal == -1)
-                containsRecursive(aNode.getLeftNode(), elem);
-            else
-                containsRecursive(aNode.getRightNode(), elem);
+        if(aNode == null) {
+            return false;
         }
-        return false;
+        else{
+            int compareVal = aNode.getValue().compareTo(elem);
+            if (compareVal == 0){
+                return true;
+            }
+            else if (compareVal == -1) {
+                return this.containsRecursive(aNode.getLeftNode(), elem);
+            }
+            else {
+                return this.containsRecursive(aNode.getRightNode(), elem);
+            }
+        }
     }
 
     public void changeRootNode(Node aRootNode){

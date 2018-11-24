@@ -57,15 +57,7 @@ public class BSTConjunto<T extends Comparable<T>> {
         if (obj instanceof BSTConjunto){
             BSTConjunto anotherBST = (BSTConjunto) obj;
             if (this.bst.getSize() == anotherBST.setSize()){
-                ArrayList<T> elements = anotherBST.getBST().inOrder();
-                int elementsAsserted=0;
-                Iterator itr = elements.iterator();
-                while(itr.hasNext()){
-                    T anElement = (T)itr.next();
-                    if(this.contains(anElement))
-                        elementsAsserted++;
-                }
-                return elementsAsserted == this.bst.getSize();
+                return this.getBST().inOrder().equals(anotherBST.getBST().inOrder());
             }
             else
                 return false;
